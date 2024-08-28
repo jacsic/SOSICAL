@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To App</title>
+    <!-- Link to External CSS (if any) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <!-- Embedded CSS Starts Here -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+            text-decoration: none;
+            font-family: sans-serif;
+            text-decoration-color: #000;
+        }
+
+        html, body {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        #main {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #nav {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        #nav img {
+            height: 40px;
+            width: 20%;
+        }
+
+        #part {
+            height: 100%;
+            width: 90%;
+            margin: 0px 50px;
+            display: flex;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #39DE55;
+        }
+
+        #left {
+            height: 95%;
+            width: 45%;
+            margin: 20px;
+            border-radius: 10px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2024/01/Mobile-Gaming-Continues-To-Grow.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #part #left h1 {
+            color: #fff;
+        }
+
+        #part #left h1:hover {
+            color: #39DE55;
+        }
+
+        #left:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #right {
+            height: 95%;
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        #upper {
+            height: 50%;
+            margin: 20px 0px;
+            border-radius: 10px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2023/10/rompacks.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #part #upper h1 {
+            color: #fff;
+        }
+
+        #part #upper h1:hover {
+            color: #39DE55;
+        }
+
+        #upper:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #lower {
+            height: 46%;
+            margin: 20px 0px;
+            border-radius: 10px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2023/10/legend-of-dragons.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #part #lower h1 {
+            color: #fff;
+        }
+
+        #part #lower h1:hover {
+            color: #39DE55;
+        }
+
+        #lower:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #left h1 {
+            padding: 470px 20px;
+            font-size: 30px;
+            color: #39DE55;
+        }
+
+        #upper h1 {
+            padding: 200px 20px;
+            font-size: 30px;
+            color: #39DE55;
+        }
+
+        #lower h1 {
+            padding: 170px 20px;
+            font-size: 30px;
+            color: #39DE55;
+        }
+
+        .h1 {
+            height: 40px;
+            padding: 120px;
+            color: #39DE55;
+        }
+
+        #section {
+            height: 270vh;
+            width: 100%;
+            display: flex;
+        }
+
+        #pt1 {
+            width: 140%;
+            height: 250vh;
+        }
+
+        #pt2 {
+            width: 150%;
+            height: 250vh;
+        }
+
+        #pt3 {
+            width: 160%;
+            height: 250vh;
+        }
+
+        #box {
+            height: 15%;
+            border-radius: 10px;
+            margin: 10px 30px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2020/07/reddit-ban-600x300.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #box:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #box1 {
+            height: 15%;
+            border-radius: 10px;
+            margin: 185px 30px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2023/10/pokemon-black-and-white-600x400.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #box1:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #box2 {
+            height: 15%;
+            border-radius: 10px;
+            margin: 185px 30px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2019/08/clan-names-600x314.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #box2:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #box3 {
+            height: 15%;
+            border-radius: 10px;
+            margin: 185px 30px;
+            background-image: url(https://howtoapps.com/wp-content/uploads/2023/09/The-Role-Of-Cryptocurrencies-In-A-Cashless-Society-600x400.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #box3:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #para {
+            height: 13%;
+            border-radius: 10px;
+            margin: 10px 10px;
+            text-align: left;
+        }
+
+        #para h1 {
+            color: #000;
+        }
+
+        #para:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+            color: #39DE55;
+        }
+
+        #para h1:hover {
+            color: #39DE55;
+        }
+
+        #para1 {
+            height: 13%;
+            padding-top: 10px;
+            line-height: 30px;
+            border-radius: 10px;
+            margin: 10px;
+            color: #000;
+            text-align: left;
+        }
+
+        #para1 h1 {
+            color: #000;
+        }
+
+        #para1 h1:hover {
+            color: #39DE55;
+        }
+
+        #para1:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        #para2 {
+            height: 13%;
+            border-radius: 10px;
+            margin: 10px 10px;
+            color: #000;
+        }
+
+        #para2 h1 {
+            color: #000;
+        }
+
+        #para2 h1:hover {
+            color: #39DE55;
+        }
+
+        #para2:hover {
+            transition: all 2s ease-in-out;
+            transform: scale(1.02);
+            opacity: 1;
+            color: #39DE55;
+        }
+
+        #pic {
+            height: 13%;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+    </style>
+    <!-- Embedded CSS Ends Here -->
+</head>
+<body>
+    <!-- HTML content goes here -->
+</body>
+</html>
